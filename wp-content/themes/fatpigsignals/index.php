@@ -10,7 +10,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Index Template</title>
+	<title>Fat Pig Signals</title>
 
 </head>
 
@@ -68,7 +68,7 @@
 			<!-- Logo
             ============================================= -->
 			<div id="logo">
-				<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png">Udemy</a>
+				<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png">Fat Pig Signals</a>
 			</div><!-- #logo end -->
 
 			<div class="top-advert">
@@ -87,69 +87,18 @@
 
 					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-					<ul>
-						<li><a href="index.html"><div>Menu Item 1</div></a>
-							<ul>
-								<li><a href="#"><div>Submenu Item 1</div></a>
-									<ul>
-										<li><a href="#"><div>Submenu Item 1</div></a></li>
-										<li><a href="#"><div>Submenu Item 2</div></a></li>
-									</ul>
-								</li>
-								<li><a href="#"><div>Submenu Item 2</div></a>
-									<ul>
-										<li><a href="#"><div>Submenu Item 1</div></a></li>
-										<li><a href="#"><div>Submenu Item 2</div></a></li>
-									</ul>
-								</li>
-								<li><a href="#"><div>Submenu Item 3</div></a></li>
-								<li><a href="#"><div>Submenu Item 4</div></a></li>
-							</ul>
-						</li>
-						<li><a href="index.html"><div>Menu Item 2</div></a>
-							<ul>
-								<li><a href="#"><div>Submenu Item 1</div></a>
-									<ul>
-										<li><a href="#"><div>Submenu Item 1</div></a></li>
-										<li><a href="#"><div>Submenu Item 2</div></a></li>
-									</ul>
-								</li>
-								<li><a href="#"><div>Submenu Item 2</div></a>
-									<ul>
-										<li><a href="#"><div>Submenu Item 1</div></a></li>
-										<li><a href="#"><div>Submenu Item 2</div></a></li>
-									</ul>
-								</li>
-								<li><a href="#"><div>Submenu Item 3</div></a></li>
-								<li><a href="#"><div>Submenu Item 4</div></a></li>
-							</ul>
-						</li>
-						<li><a href="#"><div>Menu Item 3</div></a>
-							<ul>
-								<li><a href="#"><div>Submenu Item 1</div></a>
-									<ul>
-										<li><a href="#"><div>Submenu Item 1</div></a>
-											<ul>
-												<li><a href="#"><div>Submenu Item 1</div></a></li>
-												<li><a href="#"><div>Submenu Item 2</div></a></li>
-												<li><a href="#"><div>Submenu Item 3</div></a></li>
-											</ul>
-										</li>
-										<li><a href="#"><div>Submenu Item 2</div></a></li>
-										<li><a href="#"><div>Submenu Item 3</div></a></li>
-									</ul>
-								</li>
-								<li><a href="#"><div>Submenu Item 2</div></a>
-									<ul>
-										<li><a href="#"><div>Submenu Item 1</div></a></li>
-										<li><a href="#"><div>Submenu Item 2</div></a></li>
-									</ul>
-								</li>
-								<li><a href="#"><div>Submenu Item 3</div></a></li>
-							</ul>
-						</li>
-						<li><a href="#">Menu Item 4</a></li>
-					</ul>
+					<?php
+
+            if( has_nav_menu( 'primary' ) ) {
+              wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'container'      => false,
+                'fallback_cb'    => false,
+                'depth'          => 4
+              ));
+            }
+
+           ?>
 
 					<!-- Top Cart
 						============================================= -->
@@ -241,7 +190,7 @@
 
 						<div class="entry clearfix">
 							<div class="entry-image">
-								<a href="images/blog/full/17.jpg" data-lightbox="image"><img class="image_fade" src="images/blog/standard/17.jpg" alt="Standard Post with Image"></a>
+								<a href="images/blog/full/17.jpg" data-lightbox="image"><img class="image_fade" src="assets/images/screenshot.png" alt="Standard Post with Image"></a>
 							</div>
 							<div class="entry-title">
 								<h2><a href="single.html">This is a Standard post with a Preview Image</a></h2>
