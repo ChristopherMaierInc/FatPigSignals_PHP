@@ -5,7 +5,7 @@ function fps_setup_theme() {
 
   register_nav_menu(
     'primary',
-    __( 'Primary Menu', 'fatpigsignals' ) s
+    __( 'Primary Menu', 'fatpigsignals' )
   );
 }
 
